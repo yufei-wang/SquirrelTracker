@@ -4,5 +4,5 @@ from .models import Squirrels
 from .forms import SquirrelForm
 
 # Create your views here.
-def homepage_view(request):
-    return render(request,'sightings/homepage.html')
+def home(request):
+    return render(request,'sightings/home.html')
