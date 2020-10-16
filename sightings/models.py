@@ -47,7 +47,7 @@ class Squirrels(models.Model):
     Age = models.CharField(
             help_text = _('Age'),
             max_length = 50,
-            choices = AGE_CHOICE,
+            choices = Age_choice,
             null = True,
             blank = True,
             )
