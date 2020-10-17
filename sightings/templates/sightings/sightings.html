@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<body>
+             {% for sighting in sightings %}
+	     <h2>Unique Squirrel ID:</h2>
+		 <p>{{sighting.unique_squirrel_id}}</p>
+	     <h2>Date:</h2>
+		 <p> {{sighting.date}}</p>
+
+             <h2>Link:</h2>
+		 <a href="{%url 'squirrel_id' sighting.unique_squirrel_id%}">click!</a>
+	     {% endfor %}
+	</body>
+</html>
