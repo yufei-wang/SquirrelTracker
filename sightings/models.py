@@ -91,31 +91,31 @@ class Squirrels(models.Model):
             blank = True,
             )
 
-    Running = models.NullBooleanField(
+    Running = models.BooleanField(
             help_text = _('Running'),
             null = True,
             blank = True,
     )
     
-    Chasing = models.NullBooleanField(
+    Chasing = models.BooleanField(
             help_text = _('Chasing'),
             null = True,
             blank = True,
     ) 
 
-    Climbing = models.NullBooleanField(
+    Climbing = models.BooleanField(
             help_text = _('Climbing'),
             null = True,
             blank=True,
     )
 
-    Eating = models.NullBooleanField(
+    Eating = models.BooleanField(
             help_text = _('Eating'),
             null = True,
             blank=True,
     )
 
-    Foraging = models.NullBooleanField(
+    Foraging = models.BooleanField(
             help_text = _('Foraging'),
             null = True,
             blank=True,
@@ -128,49 +128,49 @@ class Squirrels(models.Model):
         blank = True,
     )
 
-    Kuks = models.NullBooleanField(
+    Kuks = models.BooleanField(
             help_text = _('Kuks'),
             null = True,
             blank = True,
     )
 
-    Quaas = models.NullBooleanField(
+    Quaas = models.BooleanField(
             help_text = _('Quaas'),
             null = True,
             blank = True,
     )
 
-    Moans = models.NullBooleanField(
+    Moans = models.BooleanField(
             help_text = _('Moans'),
             null = True,
             blank = True,
     )
 
-    Tail_Flags = models.NullBooleanField(
+    Tail_Flags = models.BooleanField(
             help_text = _('Tail_Flags'),
             null = True,
             blank=True,
     )
 
-    Tail_Twitches = models.NullBooleanField(
+    Tail_Twitches = models.BooleanField(
             help_text = _('Tail_Twitches'),
             null = True,
             blank=True,
     )
 
-    Approaches = models.NullBooleanField(
+    Approaches = models.BooleanField(
             help_text = _('Approaches'),
             null = True,
             blank=True,
     )
 
-    Indifferent = models.NullBooleanField(
+    Indifferent = models.BooleanField(
             help_text = _('Indifferent'),
             null = True,
             blank=True,
     )
     
-    Runs_From = models.NullBooleanField(
+    Runs_From = models.BooleanField(
             help_text = _('Runs_From'),
             null = True,
             blank=True,
