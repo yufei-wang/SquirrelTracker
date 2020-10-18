@@ -2,7 +2,8 @@ from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404,redirect
 from .models import Squirrels
 from .forms import SightingsForm
-
+from django.http import JsonResponse
+from django.forms.models import model_to_dict
 # Create your views here.
 def home(request):
     return render(request,'sightings/home.html')
@@ -25,5 +26,9 @@ def sightings(request):
     return render(request,'sightings/sightings.html',context={'sightings':squirrels_id})
 
 def squirrel_id(request,unique_squirrel_id):
-    context = {'unique_squirrel_id' : unique_squirrel_id}
+    s = Squirrels.objects.filter(Unique_Squirrel_Id=unique_squirrel_id).first()
+    squirrels = model_to_dict(s)
+    context= {'squirrels':squirrels}
     return render(request, 'sightings/squirrel_id.html',context)
+
+

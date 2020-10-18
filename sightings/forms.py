@@ -8,3 +8,4 @@ class SightingsForm(ModelForm):
     class Meta:
         model = Squirrels
         fields = '__all__'
+
