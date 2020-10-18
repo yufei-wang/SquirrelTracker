@@ -36,11 +36,32 @@ def add(request):
         form = SightingsForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect(f'/sightings/')
+        return redirect(f'/sightings/')
     else:
         form = SightingsForm()
     context = {
             'form':form,
         }
     return render(request,'sightings/add.html',context)
+
+def stats(request):
+    num_sightings = Squirrels.objects.all().count()
+    num_morning_sight = Squirrels.objects.filter(Shift='AM').count()
+    num_adult = Squirrels.objects.filter(Age='Adult').count()
+    num_aboveground = Squirrels.objects.filter(Location='Above Ground').count()
+    num_eating = Squirrels.objects.filter(Eating=True).count()
+    context = {
+
+        'num_sightings': num_sightings,
+
+        'num_morning_sight': num_morning_sight,
+
+        'num_adult': num_adult,
+
+        'num_aboveground': num_aboveground,
+
+        'num_eating': num_eating,
+
+    }
+    return render(request, 'sightings/stats.html', context)
 

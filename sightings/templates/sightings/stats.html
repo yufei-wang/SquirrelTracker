@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html>
+
+<h1 class="text-center mt-5">Sighting Stats</h1>
+
+{% block content %}
+
+<form method='GET'>
+
+
+
+
+	<style>
+
+		table,
+
+		table tr th,
+
+		table tr td {
+
+			border: 2px solid white;
+
+		}
+
+
+
+
+		table {
+
+			width: 900px;
+
+			min-height: 50px;
+
+			line-height: 50px;
+
+			text-align: center;
+
+			border-collapse: collapse;
+
+		}
+
+	</style>
+
+
+
+
+	<table align='center' class="mt-1 table table-striped">
+
+		<tr class="bg-info">
+
+			<th># Number of Squirrels</th>
+               <th># Number of Morning Sightings</th>
+
+			<th># Number of Adult Age Squirrels</th>
+
+			<th># Number of Squirrels above the ground</th>
+
+
+
+			<th># Squirrels Eating</th>
+
+		</tr>
+
+		<tr class="bg-warning">
+
+			<td>{{ num_sightings }}</td>
+
+			<td>{{ num_morning_sight}}</td>
+
+			<td>{{ num_adult }}</td>
+
+			<td>{{ num_aboveground }}</td>
+
+			<td>{{ num_eating }}</td>
+
+		</tr>
+
+		</center>
+
+	</table>
+
+</form>
+
+
+
+
+
+
+
+{% endblock %}
+
+
+</html>
+
