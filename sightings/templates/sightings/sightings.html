@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<p><a href="/sightings/add">Click here to add a new sighting!</a></p>
 <head>
 <style>
 table {
@@ -36,4 +37,5 @@ tr:nth-child(even) {
     <td><a href="{%url 'squirrel_id' sighting.unique_squirrel_id%}">{%url 'squirrel_id' sighting.unique_squirrel_id%}</a></td></tr>
 {% endfor %}
 </table>
+
 </html>
