@@ -2,37 +2,38 @@
 
 <html>
 
-<h1 class="text-center mt-5">Sighting Stats</h1>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Sighting Stats</title>
+</head>
+<body>
+
+<h1 class="text-center mt-3">Sighting Stats</h1>
 
 {% block content %}
 
 <form method='GET'>
-
-
-
-
 	<style>
 
 		table,
-
 		table tr th,
-
 		table tr td {
-
-			border: 2px solid white;
-
+			border: 20px solid white;
 		}
-
-
-
 
 		table {
 
 			width: 900px;
 
-			min-height: 50px;
+			min-height: 70px;
 
-			line-height: 50px;
+			line-height: 70px;
 
 			text-align: center;
 
@@ -41,9 +42,6 @@
 		}
 
 	</style>
-
-
-
 
 	<table align='center' class="mt-1 table table-striped">
 
@@ -81,15 +79,11 @@
 	</table>
 
 </form>
-
-
-
-
-
-
-
 {% endblock %}
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>  
 
 </html>
 
