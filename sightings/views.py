@@ -32,9 +32,6 @@ def squirrel_id(request,unique_squirrel_id):
     return render(request, 'sightings/squirrel_id.html',context)
 
 
-<<<<<<< HEAD
-
-
 def add(request):
     if request.method == "POST":
         form = SightingsForm(request.POST)
@@ -47,5 +44,3 @@ def add(request):
             'form':form,
         }
     return render(request,'sightings/add.html',context)
-=======
->>>>>>> 8c3b1e0bdc41fa1ecad92636804c4400338d7421
