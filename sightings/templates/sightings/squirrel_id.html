@@ -1,6 +1,47 @@
 <!DOCTYPE html>
 <html>
-
-	<body>{{unique_squirrel_id}}</body>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+td:nth-child(1) {
+  background-color: #dddddd;
+  
+}
+</style>
+</head>
+<table>
+    <tr>
+        <td><b>Latitude</b></td>
+        <td>{{squirrels.Latitude}}</td>
+    </tr>
+    <tr>
+        <td><b>Longitude</b></td>
+        <td>{{squirrels.Longitude}}</td>
+    </tr>
+    <tr>
+        <td><b>Unique Squirrel ID</b></td>
+        <td>{{squirrels.Unique_Squirrel_Id}}</td>
+    </tr>
+    <tr>
+        <td><b>Shift</b></td>
+        <td>{{squirrels.Shift}}</td>
+    </tr>
+    <tr>
+        <td><b>Date</b></td>
+        <td>{{squirrels.Date}}</td>
+    </tr>
+    <tr>
+        <td><b>Age</b></td>
+        <td>{{squirrels.Age}}</td>
+    </tr>
+</table>
 </html>
-

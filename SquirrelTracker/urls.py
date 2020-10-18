@@ -21,5 +21,6 @@ urlpatterns = [
     path('',include('sightings.urls')),
     path('map/',include('sightings.urls')),
     path('sightings/',include('sightings.urls')),
-    path('sightings/<str:unique_squirrel_id>',include('sightings.urls')),
+    path('<str:unique_squirrel_id>',include('sightings.urls')),
+
 ]
