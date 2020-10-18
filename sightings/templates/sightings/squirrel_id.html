@@ -1,47 +1,67 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-td:nth-child(1) {
-  background-color: #dddddd;
-  
-}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Squirrel Information</title>
+  </head>
+ <body>
+	 <h1 class="text-center mt-5">Squirrel Information</h1>
+	{% block content %}
+	<form method='GET'>
+	 <style>
+		table,
+		table tr th,
+		table tr td {
+			border: 5px solid white;
+		}
+
+		table {
+			width: 100px;
+			min-height: 50px;
+			line-height: 50px;
+			text-align: center;
+			border-collapse: collapse;
+		}
+
 </style>
-</head>
-<table>
+<table align='center' class="mt-1 table table-striped">
     <tr>
-        <td><b>Latitude</b></td>
-        <td>{{squirrels.Latitude}}</td>
+        <td class="bg-info"><b>Latitude</b></td>
+        <td class="bg-success">{{squirrels.Latitude}}</td>
     </tr>
     <tr>
-        <td><b>Longitude</b></td>
-        <td>{{squirrels.Longitude}}</td>
+        <td class="bg-info"><b>Longitude</b></td>
+        <td class="bg-success">{{squirrels.Longitude}}</td>
     </tr>
     <tr>
-        <td><b>Unique Squirrel ID</b></td>
-        <td>{{squirrels.Unique_Squirrel_Id}}</td>
+        <td class="bg-info"><b>Unique Squirrel ID</b></td>
+        <td class="bg-success">{{squirrels.Unique_Squirrel_Id}}</td>
     </tr>
     <tr>
-        <td><b>Shift</b></td>
-        <td>{{squirrels.Shift}}</td>
+        <td class="bg-info"><b>Shift</b></td>
+        <td class="bg-success">{{squirrels.Shift}}</td>
     </tr>
     <tr>
-        <td><b>Date</b></td>
-        <td>{{squirrels.Date}}</td>
+        <td class="bg-info"><b>Date</b></td>
+        <td class="bg-success">{{squirrels.Date}}</td>
     </tr>
     <tr>
-        <td><b>Age</b></td>
-        <td>{{squirrels.Age}}</td>
+        <td class="bg-info"><b>Age</b></td>
+        <td class="bg-success">{{squirrels.Age}}</td>
     </tr>
 </table>
-</html>
+	</form>
+{% endblock %}
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html
