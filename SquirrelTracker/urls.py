@@ -19,4 +19,7 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('sightings.urls')),
+    path('map/',include('sightings.urls')),
+    path('sightings/',include('sightings.urls')),
+    path('sightings/<str:unique_squirrel_id>',include('sightings.urls')),
 ]
