@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html>
-	<body>
-             {% for sighting in sightings %}
-	     <h2>Unique Squirrel ID:</h2>
-		 <p>{{sighting.unique_squirrel_id}}</p>
-	     <h2>Date:</h2>
-		 <p> {{sighting.date}}</p>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-             <h2>Link:</h2>
-		 <a href="{%url 'squirrel_id' sighting.unique_squirrel_id%}">click!</a>
-	     {% endfor %}
-	</body>
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>All Sightings</h2>
+
+<table>
+  <tr>
+    <th>Unique Squirrel ID</th>
+    <th>Date</th>
+    <th>Link</th>
+  </tr>
+{% for sighting in sightings %}
+  <tr>
+    <td>{{sighting.unique_squirrel_id}}</td>
+    <td> {{sighting.date}}</td>
+    <td><a href="{%url 'squirrel_id' sighting.unique_squirrel_id%}">{%url 'squirrel_id' sighting.unique_squirrel_id%}</a></td></tr>
+{% endfor %}
+</table>
 </html>

@@ -25,5 +25,5 @@ def sightings(request):
     return render(request,'sightings/sightings.html',context={'sightings':squirrels_id})
 
 def squirrel_id(request,unique_squirrel_id):
-    context = {'unique-squirrel-id' : unique_squirrel_id}
+    context = {'unique_squirrel_id' : unique_squirrel_id}
     return render(request, 'sightings/squirrel_id.html',context)
