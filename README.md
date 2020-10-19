@@ -8,15 +8,15 @@ Squirrel Tracker has the following features:
 1. Import the data from file in CSV format 
 2. Export the data in CSV format
 3. Display map that shows the location of the squirrel sightings
-4. Lists all squirrel sightings with links to view each sighting
+4. List all squirrel sightings with links to view each sighting
 5. Update a particular sighting and create a new sighting
 6. View general stats about the sightings
 
 
 Contributors
 -------------------
-- Project Group 17: Yufei Wang, Zhenghang Guo, Haoqi Gu
-- UNIs: yw3588, zg2378, hg2560
+- Name: Yufei Wang, Zhenghang Guo, Haoqi Gu
+- UNI: yw3588, zg2378, hg2560
 
 Website
 -------------------
