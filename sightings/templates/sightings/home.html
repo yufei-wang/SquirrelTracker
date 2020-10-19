@@ -1,4 +1,43 @@
 <!DOCTYPE html>
-<html>
-	<body>hello</body>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h3>Welcome to Squirrel Tracker!</h3>
+  <ul class="list-inline">
+    <li><a href="">Home</a></li>
+    <li><a href="/map">Map</a></li>
+    <li><a href="/sightings">2018 Census</a></li>
+    <li><a href="{% url 'add' %}">Add</a></li>
+    <li><a href="{% url 'stats' %}">Stats</a></li>
+  </ul>
+</div>
+<div class="container">
+<br>
+    <h8>
+        Welcome to Squirrel Tracker!
+    </h8><br><br>
+    
+    <h8>
+    You can now use this application to check 2018 central park squirrel census, add and update new squirrel data.
+    <br><br>
+    
+    You can also see map that displays the locations of each squirrel sightings on <a href="https://www.openstreetmap.org/about/">OpenStreets</a> map.
+    
+    If you want to want to understand more about the data, you can checkout <a href="/sightings/stats">Stats</a> to see general statistics about 2018 central park squirrel census. 
+    </h8><br><br>
+    
+    <h8>Our application used the dataset provided by <a href="https://opendata.cityofnewyork.us/">NYC OpenData</a>. To checkout more information, you can visit this <a href="https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw">website</a>.</h8>
+</div>
+<br>
+
+</body>
 </html>
