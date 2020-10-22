@@ -28,7 +28,6 @@
 <p></p>
 <p></p>
 <body>
-<h2 align='center'><a href='add/'%}>Click here to add a new sighting!</a></h2>
 <h2 class="text-center mt-5">All Sightings</h2>
 
 <table align='center' class="mt-1 table table-striped">
@@ -41,8 +40,9 @@
   <tr>
     <td>{{sighting.unique_squirrel_id}}</td>
     <td> {{sighting.date}}</td>
-    <td><a href="{%url 'squirrel_id' sighting.unique_squirrel_id%}">{%url 'squirrel_id' sighting.unique_squirrel_id%}</a></td></tr>
+    <td><a href="{%url '/squirrel_id' sighting.unique_squirrel_id%}">{%url 'squirrel_id' sighting.unique_squirrel_id%}</a></td></tr>
 {% endfor %}
+
 </table>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
